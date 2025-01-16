@@ -4,12 +4,16 @@
 //Hardware: Bolt #SB-E2F0
 
 //Start Program
-async function startProgram() {
+  async function startProgram() {
 
 //Start & Say Start
 //Bolt will say Start across the LED's & Say it out loud
-await scrollMatrixText('Start', { r: 0, g: 255, b: 0 }, 30,);
-await speak("Start");
+  await scrollMatrixText('Start', { r: 0, g: 255, b: 0 }, 30,);
+  await speak("Start");
+
+//Red
+//Bolts LED will turn Red
+  setMainLed({ r: 255, g: 0, b: 0});
 
 //End Program
 }
