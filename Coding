@@ -6,5 +6,10 @@
 //Start Program
 async function startProgram() {
 
+//Start & Say Start
+//Bolt will say Start across the LED's & Say it out loud
+await scrollMatrixText('Start', { r: 0, g: 255, b: 0 }, 30,);
+await speak("Start");
+
 //End Program
 }
