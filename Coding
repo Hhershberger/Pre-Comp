@@ -23,5 +23,12 @@
 //Play Sound
   await Sound.play(true);
 
+//Figure Eight
+	setSpeed(30);
+  await spin(180,4);
+	await spin(-180,4);
+  await spin(-160,4);
+	await spin(180,4);
+	stopRoll();
 //End Program
 }
